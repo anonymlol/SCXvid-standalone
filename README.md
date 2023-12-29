@@ -5,9 +5,14 @@ Standalone, cross-platform port of [the AviSynth SCXvid plugin][1].
 ```
 scxvid output.log < input.y4m
 ```
+
+Example with ffmpeg
+```
+ffmpeg -i video.mkv -f yuv4mpegpipe -vf scale=640:360 -pix_fmt yuv420p - | scxvid keyframes.txt'
+```
 Only 4:2:0 input is supported.
 ### Downloads
-Win32 executable can be found in the releases section. For *nix you'll have to build it from source.
+Executable for macOS can be found in the releases section. For Windows see [here](https://github.com/soyokaze/SCXvid-standalone/releases).
 ### Building
 #### Requirements
 * Xvid 1.3.x
@@ -17,7 +22,7 @@ Use the Visual Studio solution in the repository. The "xvidcore" directory from 
 #### On Unix-like systems
 Assuming you have libxvidcore properly installed somewhere in compiler's default paths, run:
 ```
-cc -o scxvid scxvid.c -lxvidcore
+cc -o scxvid scxvid.c lxvidcore.4.dylib
 ```
 
 
