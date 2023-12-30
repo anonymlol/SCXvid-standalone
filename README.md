@@ -22,7 +22,7 @@ Use the Visual Studio solution in the repository. The "xvidcore" directory from 
 #### On Unix-like systems
 Assuming you have libxvidcore properly installed somewhere in compiler's default paths, run:
 ```
-cc -o scxvid scxvid.c lxvidcore.4.dylib
+cc -o scxvid scxvid.c libxvidcore.a
 ```
 
 
