@@ -8,7 +8,7 @@ scxvid output.log < input.y4m
 
 Example with ffmpeg
 ```
-ffmpeg -i video.mkv -f yuv4mpegpipe -vf scale=640:360 -pix_fmt yuv420p - | scxvid keyframes.txt'
+ffmpeg -i video.mkv -f yuv4mpegpipe -vf scale=640:360 -pix_fmt yuv420p - | scxvid keyframes.txt
 ```
 Only 4:2:0 input is supported.
 ### Downloads
