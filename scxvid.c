@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <xvid.h>
+#include "xvid.h"
 #ifdef _WIN32
 #include <io.h>
 #include <fcntl.h>
